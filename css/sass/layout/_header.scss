@@ -1,0 +1,101 @@
+ * {
+   font-family: 'Cairo', sans-serif;
+
+ }
+ p,h5{
+   color:$darkBlue;
+ }
+ 
+
+ /* start co]ntactbar */
+ .contactbar{
+   background-color: #005966;
+   color:#fff;
+   padding: 12px 10px ;
+   height: 50px;
+ }
+ .contactbar .lang-buttons{
+   float:$float-right;
+ }
+ .contactbar .lang-buttons .lang-btn{
+   border-style: none;
+   padding: 6px ;
+   border-radius: 50%;
+   font-size: 14px;
+   background-color: #fff;
+ }
+ .contactbar .lang-buttons  #english-btn{
+   margin:  0px 10px;
+ }
+ .contactbar .lang-buttons .lang-btn a{
+   color:#005966;
+ }
+ .contactbar .lang-buttons .contact-info{
+   float:$float-left;
+ }
+
+ .contactbar .contact-info .contactbar-address{
+   display: inline-block;
+   padding-right: 20px;
+   font-size: 13px
+ }
+ .contactbar  .contact-info .contactbar-phone{
+   display: inline-block;
+   font-size: 13px
+ }
+ .contactbar  .contact-info i {
+   margin:0px 15px
+ }
+ .contactbar  .contact-info .contactbar-phone i{
+   transform: scale(-1,1);
+ }
+ /* end contactbar */
+/* start navbar */
+.my-nav{
+    background-color: $white;
+    width:100%;
+    z-index: 999;
+    transform: translateZ(0);
+    transition:all 0.5s;
+    .navbar{
+       .navbar-brand{
+        color:$blue;
+        font-size:30px;
+        font-weight: bold;
+       }
+      .nav-item{
+        margin: 0px 13px;
+         .nav-link{
+           color:$blue;
+           @include prefixer(transition , .4s ease-in-out , webkit moz);
+           &:hover{
+              color: $pink;
+          }
+       }
+       .active{
+         color: $pink
+       }
+
+     }
+
+
+     }
+    }
+
+/* end navbar */
+/* start slider */
+.slider {
+  background-image:url('../../img/Untitled-2-860x251.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  color:$white;
+  .slider-content {
+    padding: 60px 0;
+    .slider-heading{
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+}
+/* end slider */

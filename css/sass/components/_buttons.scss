@@ -1,0 +1,16 @@
+.Elkhadrawy-button{
+    background-color: $pink;
+    color: $white;
+    padding: 10px 23px;
+    border-radius: 29px;
+    font-size: 18px;
+    border-style: none;
+    @include prefixer(transition, .4s ease-in-out, webkit moz);
+    &:hover, &:focus{
+        outline:0;
+        text-decoration: none;
+        color: $white;
+        background-color: $blue;
+        width: auto;
+    }
+}
